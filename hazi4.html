@@ -62,38 +62,46 @@
       </div>
     </div>
 
-    <div id="userCardDiv" class="col-5" style="display:none">
-      <table class="table " style="width: 100%;">
-        <tr>
-          <th>ID</th>
-          <td> <input id="idField" style="border: none" readonly /></td>
-          <td rowspan="5"><img id="avatarImage" alt="" /></td>
-        </tr>
-        <tr>
-          <th>Email</th>
-          <td><input type="email"  id="email"
-              style="border: none; width: 100%;" /></td>
-        </tr>
-        <tr>
-          <th>Fist name</th>
-          <td>
-            <input type="text" name="" id="fName" style="border: none; width: 100%;" />
-          </td>
-        </tr>
-        <tr>
-          <th>Last name</th>
-          <td>
-            <input type="text" name="" id="lName" style="border: none; width: 100%;" />
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3">
-            <button class="btn btn-primary" id="refreshUser" onclick="refreshUser();">Update user data</button>
-            <button class="btn btn-danger" id="deleteUser" onclick="delUser();">Delete user data</button>
-          </td>
-        </tr>
-      </table>
+
+
+    <div class="modal col-5" tabindex="-1" id="userCardDiv">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <table class="table " style="width: 100%;">
+            <tr>
+              <th>ID</th>
+              <td> <input id="idField" style="border: none" readonly /></td>
+              <td rowspan="5"><img id="avatarImage" alt="" /></td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td><input type="email" id="email" style="border: none; width: 100%;" /></td>
+            </tr>
+            <tr>
+              <th>Fist name</th>
+              <td>
+                <input type="text" name="" id="fName" style="border: none; width: 100%;" />
+              </td>
+            </tr>
+            <tr>
+              <th>Last name</th>
+              <td>
+                <input type="text" name="" id="lName" style="border: none; width: 100%;" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <button class="btn btn-primary" id="refreshUser" onclick="refreshUser();">Update user data</button>
+                <button class="btn btn-danger" id="deleteUser" onclick="delUser();">Delete user data</button>
+                <button class="btn btn-primary"  onclick="closeModal ();">Close</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
+
+
 
   </div>
 
