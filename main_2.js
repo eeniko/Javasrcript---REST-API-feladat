@@ -190,7 +190,11 @@ function refreshUser() {
       alert(id + ": user data update is successful: " + result.updatedAt);
     }
   );
-  getUserData(1);
+  getUserData(1);C
+  document.getElementById("userCardDiv").style.display = "none";
+}
+
+function closeModal () {
   document.getElementById("userCardDiv").style.display = "none";
 }
 
