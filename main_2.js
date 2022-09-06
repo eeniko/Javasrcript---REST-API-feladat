@@ -194,7 +194,7 @@ function refreshUser() {
   document.getElementById("userCardDiv").style.display = "none";
 }
 
-function closeModal() {
+function closeModal () {
   document.getElementById("userCardDiv").style.display = "none";
 }
 
