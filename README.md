@@ -1,3 +1,7 @@
+demo oldal:  https://javascriptrestapi.netlify.app/
+
+
+
 # ajax  feladat
 
 1. Feladat
